@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>oppy | commands</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP DARK THEME SINCE I VALUE YOUR EYES -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.min.css">
+
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <style>
+    tr:target {
+        animation-duration: 1.5s;
+        animation-name: attention;
+    }
+
+    @keyframes attention {
+    from {background-color: rgba(255, 255, 0, 0.404)}
+    to {background-color: transparent;}
+    }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark">
+    <button style="color: white;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path style="fill:white;" d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+        <a class="navbar-brand" href="#">
+            <img src="https://images.discordapp.net/avatars/487576643272048673/0d344a721850b2f33c89ed009109afc5.png?size=512" width="30" height="30" class="d-inline-block align-top" alt="">
+            Oppy
+          </a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="commands.html">Commands <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item userOnly">
+            <a class="nav-link" href="dash.html">Manage</a>
+        </li>
+        <li class="nav-item nonUserOnly">
+            <a class="nav-link login">login</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0" method="GET" action="search.html">
+        <input name="q" class="form-control mr-sm-2" type="search" placeholder="Search for template" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+      <div id="warningContainer">
+          
+      </div>
+      <div id="main" class="container">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">name</th>
+                <th scope="col">args</th>
+                <th scope="col">description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="help">
+                <td>help</td>
+                <td></td>
+                <td>shows help message</td>
+              </tr>
+              <tr id="upload">
+                <td>upload</td>
+                <td></td>
+                <td>starts template uploading process</td>
+              </tr>
+              <tr id="load">
+                <td>load</td>
+                <td>id</td>
+                <td>loads the template</td>
+              </tr>
+            </tbody>
+          </table>
+          <small>for full list use the help command </small>
+      </div>
+</body>
+</html>

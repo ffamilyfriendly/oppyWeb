@@ -1,0 +1,15 @@
+.menuicon {
+    cursor: pointer;
+}
+
+#displayafter_correctid {
+    display: none;
+}
+
+#mainStat {
+    display: none;
+}
+
+#exit_name, #exit_description, #exit_tags {
+    display: block;
+}

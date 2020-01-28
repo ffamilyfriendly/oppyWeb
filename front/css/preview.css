@@ -1,0 +1,91 @@
+html {
+    --header-primary: #fff;
+    --header-secondary: #b9bbbe;
+    --text-normal: #dcddde;
+    --text-muted: #72767d;
+    --text-link: #00b0f4;
+    --channels-default: #8e9297;
+    --interactive-normal: #b9bbbe;
+    --interactive-hover: #dcddde;
+    --interactive-active: #fff;
+    --interactive-muted: #4f545c;
+    --background-primary: #36393f;
+    --background-secondary: #2f3136;
+    --background-tertiary: #202225;
+    --background-accent: #4f545c;
+    --background-floating: #18191c;
+    --background-mobile-primary: #36393f;
+    --background-mobile-secondary: #2f3136;
+    --background-modifier-hover: rgba(79,84,92,0.16);
+    --background-modifier-active: rgba(79,84,92,0.24);
+    --background-modifier-selected: rgba(79,84,92,0.32);
+    --background-modifier-accent: hsla(0,0%,100%,0.06);
+    --elevation-low: 0 1px 0 rgba(4,4,5,0.2),0 1.5px 0 rgba(6,6,7,0.05),0 2px 0 rgba(4,4,5,0.05);
+    --elevation-high: 0 8px 16px rgba(0,0,0,0.24);
+    --logo-primary: #fff;
+    --guild-header-text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+    --channeltextarea-background: #40444b;
+    --activity-card-background: #202225;
+    --textbox-markdown-syntax: #8e9297;
+}
+
+body {
+    background-color: var(--background-primary);
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    color: var(--text-normal);
+}
+
+#channels {
+    float: left;
+    height: 100vh;
+    width: 15%;
+    background-color: var(--background-secondary);
+}
+
+#main {
+    float: right;
+    width: 85%;
+}
+
+#mainHead, #channelHead {
+    padding: 10px;
+    
+}
+
+.category {
+    font-weight: bold;
+}
+
+.channel {
+    font-size: 15px;
+}
+
+#channelList {
+    list-style: none;
+    padding: 10px;
+    overflow-x: auto;
+    height: 80vh;
+}
+
+#chatbtn {
+    position: fixed;
+    background-color: var(--background-accent);
+    border: none;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    padding: 5px;
+    color: var(--text-normal);
+}
+
+@media only screen and (max-width: 1172px) {
+    #channels {
+        width: 100%;
+    }
+
+    #chatbtn {
+        display: none;
+    }
+}

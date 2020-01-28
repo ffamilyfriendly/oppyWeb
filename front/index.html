@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>oppy | overview</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP DARK THEME SINCE I VALUE YOUR EYES -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/cyborg/bootstrap.min.css">
+
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <button style="color: white;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path style="fill:white;" d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <a class="navbar-brand" href="#">
+                <img src="https://images.discordapp.net/avatars/487576643272048673/0d344a721850b2f33c89ed009109afc5.png?size=512" width="30" height="30" class="d-inline-block align-top" alt="">
+                Oppy
+              </a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="commands.html">Commands</a>
+            </li>
+            <li class="nav-item userOnly">
+                <a class="nav-link" href="dash.html">Manage</a>
+            </li>
+            <li class="nav-item nonUserOnly">
+                <a class="nav-link login">login</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0" method="GET" action="/search.html">
+            <input name="q" class="form-control mr-sm-2" type="search" placeholder="Search for template" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <div id="warningContainer">
+
+      </div> 
+      <div id="main" class="container">
+
+      <div id="mainPrompt" class="text-center">
+        <h3>Discord server setup, made easy!</h3>
+        <p>Pick one of <b class="templateSize">loading...</b> avalible templates and load it into your server!</p>
+        <a id="mainInvBtn" class="btn btn-primary inv">Invite</a>
+      </div>
+
+      <section>
+        <h2>Community driven</h2>
+        <p>All <b class="templateSize">loading...</b> templates avalible in the database are submitted by users of the bot! You can upload your own template with either the <a href="/commands.html#upload">upload command</a> or via <a href="/dash.html#upload">the dashboard</a></p>
+      </section>
+
+      <section>
+        <h2>Open source <span class="badge badge-primary">MIT</span></h2>
+        <p>Oppy is fully open source under the <a href="https://opensource.org/licenses/MIT">MIT</a> license and builds on the <a href="https://gitlab.com/Wait_What_/discord-bot-boilerplate">discord-bot-boilerplate</a> made by <a href="https://waitwhat.xyz/">waitwhat</a>.</p>
+        <a href="https://github.com/ffamilyfriendly/oppy" class="btn btn-info">repository for bot</a> <a href="https://github.com/ffamilyfriendly/oppyWeb" class="btn btn-info">repository for website</a>
+      </section>
+
+      <section>
+        <h2>Premium</h2>
+        <p>All of oppy's features are free but with premium you can get some nice perks like:</p>
+        <ul>
+          <li>Private templates</li>
+          <li>unlimited saved templates (defualt is 3)</li>
+          <li>50% shorter cooldown</li>
+        </ul>
+        best of all, premium is <strong>free*</strong>. All you need to do to get it is one of the following:
+        <div id="premiump">
+        <span>vote for oppy on <a href="https://top.gg/bot/487576643272048673">top.gg</a></span><br>
+        <b>OR</b><br>
+        <span>invite 20 users with your unique link (<code class="uniqueInvlink"></code>)<br><u>invites left until premium:</u><b class="uniqueInvLinkLeft"></b></span>
+        </div>
+    </section>
+
+      <section>
+          <h2>progress to 500 servers</h2>
+          <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" id="milestone" role="progressbar" aria-valuemax="500"></div>
+          </div>
+          <hr>
+          <button data-toggle="modal" data-target="#invModal" class="btn btn-primary">Invite user</button>
+      </section>
+    </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="invModal" tabindex="-1" role="dialog" aria-labelledby="invModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Help spread oppy</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <strong>Send this link to anyone who would find oppy useful.</strong><br>
+          <code class="uniqueInvlink">https://l.familyfriendly.xyz/oppy</code><br>
+          <small>if your link get more then 20 uses message me on discord for lifetime premium</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

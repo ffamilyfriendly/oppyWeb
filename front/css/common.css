@@ -1,0 +1,11 @@
+.userOnly {
+    display: none;
+}
+
+body[loggedIn="true"] .userOnly {
+    display: inherit;
+}
+
+body[loggedIn="true"] .nonUserOnly {
+    display: none;
+}
